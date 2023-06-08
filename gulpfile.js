@@ -31,13 +31,13 @@ const paths = {
 };
 
 // Responsável por fazer a hospedagem local.
-//function server() {
-//    connect.server({
-//        root: paths.output,
-//        livereload: true,
-//        port: 3000,
-//    });
-//}
+function server() {
+    connect.server({
+        root: paths.output,
+        livereload: true,
+        port: 3000,
+    });
+}
 
 // Responsável por monitorar modificações nos arquivos.
 function sentinel() {
@@ -83,6 +83,6 @@ function images() {
 }
 
 // Está criando um export chamado default que é responsável por disparar duas funções ao mesmo tempo.
-// exports.default = parallel(server, sentinel); // Usado para hospedagem, monitoramento de modificação e otimização de arquivos.
-exports.default = parallel(html, styles, scripts, images) // Usado somente para criar a pasta build com os arquivos otimizados.
+exports.default = parallel(server, sentinel); // Usado para hospedagem local, monitoramento de modificação e otimização de arquivos.
+exports.build = parallel(html, styles, scripts, images) // Usado somente para criar a pasta build com os arquivos otimizados.
 
