@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel=" preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./main.css">
+
+    <title>Pontos Turísticos</title>
+</head>
+
+<body>
+    <h1 class="title-form" data-test="title-form">Adicionar um Ponto Turístico</h1>
+
+    <form class="container-form">
+        <label class="form-input-file" for="input-file">
+            <span class="span-preview">Imagem</span>
+        </label>
+
+        <input type="file" accept="image/*" id="input-file" data-test="input-image">
+
+        <div class="form-input-text">
+            <div class="div-input-title">
+                <input type="text" class="input-title" data-test="input-titulo" placeholder="Titulo" required oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')">
+            </div>
+
+            <div class="div-input-description">
+                <textarea class="input-description" data-test="input-descrição" placeholder="Descrição" required oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')"></textarea>
+            </div>
+
+            <div class="div-button-submit">
+                <button type="submit" class="button-submit" data-test="button-submit">Adicionar</button>
+            </div>
+        </div>
+    </form>
+
+    <h1 class="title-list" data-test="title-list">Pontos Turísticos</h1>
+
+    <ul class="container-item-list" data-test="container-item-list"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./bundle.js"></script>
+</body>
+
+</html>
