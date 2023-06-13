@@ -5,7 +5,7 @@
 
 ## 📄 Descrição
 
-Nessa desafio passado pela M3 Academy foi práticado o conhecimento obtido nas aulas sobre HTML, SASS, JavaScript e o Gulp para fazer a automação do projeto.
+Nesse desafio passado pela M3 Academy foi práticado o conhecimento obtido nas aulas sobre HTML, SASS, JavaScript e o Gulp para fazer a automação do projeto.
 
 ### <a href="https://luizfelipe9627-tourist-attractions-m3.netlify.app">Acesse o desafio</a>
 
